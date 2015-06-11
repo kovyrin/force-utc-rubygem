@@ -1,3 +1,8 @@
+0.0.3 (2015-06-11):
+
+Do not package vendor and pkg dirs.
+
+#-------------------------------------------------------------------------------
 0.0.2 (2015-06-11):
 
 Fix library file name to match the new gem name.

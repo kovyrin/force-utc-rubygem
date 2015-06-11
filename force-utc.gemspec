@@ -3,7 +3,7 @@ $:.push File.expand_path('../lib', __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = 'force-utc'
-  s.version     = '0.0.2'
+  s.version     = '0.0.3'
   s.platform    = Gem::Platform::RUBY
   s.authors     = [ 'Oleksiy Kovyrin' ]
   s.email       = [ 'alexey@kovyrin.net' ]
@@ -14,6 +14,6 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'rake'
 
-  s.files         = Dir.glob("**/*")
+  s.files         = Dir.glob("**/*").reject { |f| f =~ /^(vendor|pkg|Gemfile)/ }
   s.require_paths = [ 'lib' ]
 end
