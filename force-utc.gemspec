@@ -12,6 +12,8 @@ Gem::Specification.new do |s|
   s.summary     = %q{Force evetrything to use UTC}
   s.description = %q{Processes using this gem will use UTC for all date and time operations no matter what timezone is used on the server}
 
+  s.add_development_dependency 'rake'
+
   s.files         = Dir.glob("**/*")
   s.require_paths = [ 'lib' ]
 end
